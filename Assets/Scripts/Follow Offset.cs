@@ -1,3 +1,4 @@
+using System.Security.Cryptography;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -9,6 +10,7 @@ public class FollowOffset : MonoBehaviour
     public float xPos;
     public float yPos;
     public float prevXPos;
+    public float speed;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -19,43 +21,39 @@ public class FollowOffset : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        speed = 0.03f;
         Vector2 newPos = transform.position;
         newPos.x = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue()).x;
         xPos = newPos.x;
-        yPos = newPos.y;
+        yPos = newPos.x;
         Vector2 screenPos = Camera.main.WorldToScreenPoint(transform.position);
         //transform.position = newPos;
+        
 
 
         if (xPos < 0)
         {
             if (xPos > prevXPos && prevXPos != xPos)
             {
-                if (yPos < Screen.height - 0.5)
-                {
-                    newPos.y += Time.deltaTime * 10;
+                    newPos.y = xPos + 3;
                     transform.position = newPos;
-                }
             }
             else if (xPos < prevXPos && prevXPos != xPos)
             {
-                if (yPos < Screen.height - 0.5)
-                {
-                    newPos.y -= Time.deltaTime * 10;
+                    newPos.y = xPos + 3;
                     transform.position = newPos;
-                }
             }
         }
         else if(xPos > 0)
         {
             if(xPos > prevXPos && prevXPos != xPos)
             {
-                newPos.y -= Time.deltaTime * 3;
+                newPos.y = (-1 * xPos) + 3;
                 transform.position = newPos;
             }
             else if(xPos < prevXPos && prevXPos != xPos)
             {
-                newPos.y += Time.deltaTime * 3;
+                newPos.y = (-1 * xPos) + 3;
                 transform.position = newPos;
             }
         }
