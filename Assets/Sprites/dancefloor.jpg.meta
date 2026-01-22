@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 91dfdfcf606ebe9438a7add7c064b371
+guid: d54e1f73db289b34a979037a0b326054
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7261097069247029310
-    second: Stage Light_0
+      213: 5149129237622191302
+    second: dancefloor_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,23 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Stage Light_0
+      name: dancefloor_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 276
-        height: 350
-      alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+        width: 612
+        height: 344
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2cf96ebbfa66b3b90800000000000000
-      internalID: -7261097069247029310
+      spriteID: 6c47c07a2c1657740800000000000000
+      internalID: 5149129237622191302
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 77fcc7e2823d52d4db086615af798122
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Stage Light_0: -7261097069247029310
+      dancefloor_0: 5149129237622191302
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
