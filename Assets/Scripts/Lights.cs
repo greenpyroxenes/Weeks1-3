@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class Lights : MonoBehaviour
 {
+    //set variables
     public Transform start;
     public Transform end;
     public float t;
@@ -16,6 +17,8 @@ public class Lights : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //have lights increase size then decrease to appear as they are "dancing" with the rest of the fruit\
+        //use animation curve for size increase and decrease
         t += Time.deltaTime;
         if (t > 1)
         {

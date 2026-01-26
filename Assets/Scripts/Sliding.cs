@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class Sliding : MonoBehaviour
 {
+    //set the varibles
     public Transform start;
     public Transform end;
     public float t;
@@ -18,6 +19,7 @@ public class Sliding : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //have the object lerp on an animation curve
         t += Time.deltaTime;
         if (t > 2)
         {

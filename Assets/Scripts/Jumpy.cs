@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class Jumpy : MonoBehaviour
 {
+    //set varibles
     float jump = 0.01f;
     public float yPos;
     public float xPos;
@@ -16,6 +17,9 @@ public class Jumpy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //have the object move towards the left constantly
+        //have the object move on the y axis depending on what y value it is at, wether its up or down.
+        //if object reaches end of screen, make it set to the other end to have an endless loop
         Vector2 newPos = transform.position;
         speed = Time.deltaTime + 0.01f;
         newPos.x -= speed;
